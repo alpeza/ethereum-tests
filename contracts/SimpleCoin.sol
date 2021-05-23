@@ -34,5 +34,3 @@ contract SimpleCoin {
 
     }
 }
-
-program lens fame extend science hair mind crystal mail diary random step

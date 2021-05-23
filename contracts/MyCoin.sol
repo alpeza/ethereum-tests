@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 //https://www.toptal.com/ethereum/create-erc20-token-tutorial
 
@@ -22,9 +23,9 @@ interface IERC20 {
 
 contract ERC20Basic is IERC20 {
 
-    string public constant name = "ERC20Basic";
-    string public constant symbol = "ERC";
-    uint8 public constant decimals = 18;
+    string public constant name = "MiToken";
+    string public constant symbol = "MTok";
+    uint8 public constant decimals = 2;
 
 
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
