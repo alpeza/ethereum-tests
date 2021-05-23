@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.0;
  
-import "https://github.com/0xcert/ethereum-erc721/src/contracts/tokens/nf-token-metadata.sol";
-import "https://github.com/0xcert/ethereum-erc721/src/contracts/ownership/ownable.sol";
- 
+import "https://github.com/alpeza/ethereum-tests/blob/main/soltemplates/ERC721/tokens/nf-token-metadata.sol";
+import "https://github.com/alpeza/ethereum-tests/blob/main/soltemplates/ERC721/ownership/ownable.sol";
+
 contract newNFT is NFTokenMetadata, Ownable {
  
   constructor() {
-    nftName = "Synth NFT";
-    nftSymbol = "SYN";
+    nftName = "Art NFT";
+    nftSymbol = "MYNFT";
   }
  
   function mint(address _to, uint256 _tokenId, string calldata _uri) external onlyOwner {
